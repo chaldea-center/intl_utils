@@ -6,8 +6,11 @@ String generateL10nDartFileContent(
     [bool otaEnabled = false]) {
   return """
 // GENERATED CODE - DO NOT MODIFY BY HAND
+
 import 'package:flutter/material.dart';
+
 import 'package:intl/intl.dart';${otaEnabled ? '\n${_generateLocalizelySdkImport()}' : ''}
+
 import 'intl/messages_all.dart';
 
 // **************************************************************************
