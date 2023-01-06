@@ -303,7 +303,7 @@ Future<void> reloadMessages() async {
 // ignore_for_file:comment_references
 
 import 'dart:async';
-${useDeferredLoading ? '' : "\nimport 'package:flutter/foundation.dart';"}
+${useDeferredLoading ? '' : "\nimport 'package:flutter/foundation.dart';\n"}
 import 'package:$intlImportPath/intl.dart';
 import 'package:$intlImportPath/message_lookup_by_library.dart';
 import 'package:$intlImportPath/src/intl_helpers.dart';
