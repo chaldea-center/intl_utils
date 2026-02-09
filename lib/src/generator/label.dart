@@ -1160,7 +1160,10 @@ class Label {
     return 'Intl.select(${element.value}, {${options.join(', ')}})';
   }
 
-  String _generatePluralOrSelectOptionMessage(option, List<Argument> args) {
+  String _generatePluralOrSelectOptionMessage(
+    Option option,
+    List<Argument> args,
+  ) {
     var data = option.value;
     var isValid = _validatePluralOrSelectOption(data);
 
