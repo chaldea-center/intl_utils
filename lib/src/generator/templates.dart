@@ -99,7 +99,8 @@ ${locales.map((locale) => _generateLocale(locale)).join("\n")}
     return false;
   }
 }
-""".trim();
+"""
+      .trim();
 }
 
 String _generateLocale(String locale) {
